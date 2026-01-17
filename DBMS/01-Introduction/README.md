@@ -145,3 +145,63 @@ Notes prepared from handwritten study based on Striver / takeUforward DBMS sheet
 - DBMS provides data abstraction.
 - It allows users and applications to interact with the database **without understanding internal complexities**.
 - Improves usability and simplifies database interaction.
+## 9. DBMS Architecture
+
+DBMS architecture refers to the **structural framework and organization** of a database management system.
+
+It defines how various components work together to:
+- Store data
+- Manage data
+- Retrieve data efficiently
+
+### Types of DBMS Architecture
+- **1-Tier Architecture**
+- **2-Tier Architecture**
+- **3-Tier Architecture**
+
+---
+
+### 9.1 1-Tier Architecture
+
+- Entire database application, including user interface, application logic, and storage, resides on a **single machine** or computer.
+- Example: Installing a database locally and executing SQL queries directly.
+
+---
+
+### 9.2 2-Tier Architecture
+
+- The **presentation layer** runs on the client (PC, tablet, mobile), and the **data is stored on a server**.
+- Provides direct and faster communication between client and server.
+- Adds a degree of security since the database is not exposed directly to end users.
+
+---
+
+### 9.3 3-Tier Architecture
+
+Separates the application into **three logically distinct layers**:
+
+#### Presentation Layer
+- Handles the user interface.
+- Example: PC, mobile, tablet screens.
+
+#### Application Layer
+- Manages the business logic.
+- Usually runs on an application server.
+
+#### Data Layer
+- Manages data storage and processing.
+- Runs on the database server.
+
+### Advantages of 3-Tier Architecture
+- **Scalability** — easily adjust each tier to handle user demands.
+- **Modularity & Maintainability** — each layer simplifies responsibilities.
+- **Security** — sensitive data is protected in separate layers.
+- **Performance Optimization** — presentation and application tiers can be optimized separately.
+
+### Disadvantages
+- Longer development time.
+- Increased complexity.
+- Potential latency issues.
+- Resource overhead and possible bottlenecks.
+
+---
